@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+    <script src="js/tmpl.js"></script>
+    <script src="js/script.js"></script>
+  </head>
+  <body>
+
+    <script type="text/template" id="test">
+      <div class="external">
+        <div class="middle">
+          <h1><%= name %></h1>
+          <figure>
+            <img src="<%= photoAddr %>"/>
+          </figure>
+          <div class="internal">
+            <p><%= description %></p>
+            <hr>
+            <h4 id="goal"><%= goalTitle %></h4>
+            <ul>
+              <li><%= goal1 %></li>
+              <li><%= goal2 %></li>
+              <li><%= goal3 %></li>
+            </ul>
+            <hr>
+            <h4 id="phoneNum"><%= phoneTitle %></h4>
+            <span><%= phoneNumber %></span>
+            <h4 id="fbProf"><%= fbTitle %></h4>
+            <a href="<%= fbLink %>">facebook.com</a>
+            <hr id="special">
+            <h4 id="feedback"><%= feedbackTitle %></h4>
+            <span><%= feedback %></span>
+          </div>
+        </div>
+      </div>
+    </script>
+
+  </body>
+</html>
